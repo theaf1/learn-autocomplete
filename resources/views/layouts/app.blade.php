@@ -7,7 +7,7 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="styleshee" href="{{ url('/css/jQuery-Autocomplete/style.css') }}" />
+    <link href="{{ url('/css/jQuery-Autocomplete/style.css') }}" />
     <style>
         .autocomplete-suggestions { border: 1px solid #999; background: #FFF; overflow: auto; }
         .autocomplete-suggestion { padding: 2px 5px; white-space: nowrap; overflow: hidden; }
