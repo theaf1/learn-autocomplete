@@ -21,4 +21,29 @@
     </div>
 @endsection
 
-@section('extra-script') @endsection
+@section('extra-script')
+<script>
+    // let cities = [
+    //     { value: "Australia", data: "AU" },
+    //     { value: "Japan", data: "JP" },
+    //     { value: "Thailand", data: "TH"},
+    // ];
+    // $("#autocomplete").autocomplete({
+    //     lookup: cities,
+    //     onSelect: (suggestion) => {
+    //         alert('You selected: ' + suggestion.value + ' ' + suggestion.data);
+    //     }
+    // })
+    $("#autocomplete").autocomplete({
+        serviceUrl: "{{ url('/get-cities') }}"
+        transformResult: (response) => {
+            return {
+                suggestions : JSON.parse(response).map((cityItem) => {
+                    return {
+                        value:
+                    }
+                }) 
+        }
+    })
+</script>
+@endsection
